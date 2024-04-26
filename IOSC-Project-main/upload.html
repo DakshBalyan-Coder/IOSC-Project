@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section id="hero">
+
+        <nav class="navigation">
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+
+            <a href="med.html" class="logo">Med<span>Connect</span></a>
+            <ul class="menu">
+                <li><a href="https://www.google.com/maps/search/doctors+near+me/" target="_blank">Find A Doctor</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="upload.html">Uploads</a></li>
+                <li><a href="calculator.html">calculators</a></li>
+            </ul>
+
+            <a href="#" class="nav-appointment-btn">Appointment</a>
+
+        </nav>
+        <div class="container">
+            <h1>Upload Medical Documents</h1>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="file" id="file" accept=".pdf,.doc,.docx,.png,.jpg" multiple>
+                <label for="file" class="fileLabel">Choose File</label>
+                <button type="submit" id="submitBtn">Upload</button>
+            </form>
+            <div id="progress"></div>
+            <div id="message"></div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-company-box">
+                    <a href="#" class="logo">Med<span>Connect</span></a>
+                    <p>Experience seamless healthcare with our user-friendly website, offering easy appointment booking
+                        and online prescriptions. Your health, simplified, at your fingertips.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-link-box box1">
+                    <strong>Main Link's</strong>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link-box box2">
+                    <strong>Our Services</strong>
+                    <ul>
+                        <li><a href="#">Order Medecines</a></li>
+                        <li><a href="#">Book Lab Tests</a></li>
+                        <li><a href="#">Consult a Doctor</a></li>
+                        <li><a href="#">Care Plan</a></li>
+                        <li><a href="#">Ayurveda Articles</a></li>
+                        <li><a href="#">Hindi Articles</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link-box box3">
+                    <strong>Our Policies</strong>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">IP Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Fake Jobs and Fraud Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-bottom">
+                <strong>©2024 MedConnect . All rights reserved. All medicines are dispensed in compliance with the Drugs
+                    and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945. We do not process requests for Schedule
+                    X and habit forming drugs.</strong>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiperservices", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    700: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                },
+            });
+        </script>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script src="https://mediafiles.botpress.cloud/deeca7df-a217-4831-b9f0-35a22db4f26d/webchat/config.js"
+            defer></script>
+
+
+</body>
+
+</html>
